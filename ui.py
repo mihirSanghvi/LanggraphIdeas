@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Import graph
-from agent_app.graph.graph import build_graph
+from backend.graph.graph import build_graph
 
 st.set_page_config(page_title="Agentic AI: RAG + SQL", layout="wide")
 

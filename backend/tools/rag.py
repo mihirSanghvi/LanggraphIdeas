@@ -1,5 +1,5 @@
 from langchain_core.tools import tool
-from agent_app.services.vector import get_retriever
+from backend.services.vector import get_retriever
 
 @tool
 def retrieve_documents(query: str, k: int = 4, filters: dict = None) -> str:

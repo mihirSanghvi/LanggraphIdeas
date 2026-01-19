@@ -1,6 +1,6 @@
 from langgraph.graph import StateGraph, END
-from agent_app.graph.state import AgentState
-from agent_app.graph.nodes import (
+from backend.graph.state import AgentState
+from backend.graph.nodes import (
     router_node, rag_node, sql_gen_node, response_node
 )
 

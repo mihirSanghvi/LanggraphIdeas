@@ -1,5 +1,5 @@
 from langchain_openai import ChatOpenAI
-from agent_app.config import settings
+from backend.config import settings
 
 def get_llm():
     """Returns a configured ChatOpenAI instance."""

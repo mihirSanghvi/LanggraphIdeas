@@ -1,7 +1,7 @@
 import os
 from langchain_community.vectorstores import OpenSearchVectorSearch
 from langchain_openai import OpenAIEmbeddings
-from agent_app.config import settings
+from backend.config import settings
 import pandas as pd
 from langchain_core.documents import Document
 

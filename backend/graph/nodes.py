@@ -1,15 +1,15 @@
 from typing import Dict, Any
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate
-from agent_app.services.llm import get_llm
-from agent_app.services.vector import get_retriever
-from agent_app.tools.rag import retrieve_documents
-from agent_app.tools.sql import execute_sql, list_tables
-from agent_app.graph.state import AgentState
+from backend.services.llm import get_llm
+from backend.services.vector import get_retriever
+from backend.tools.rag import retrieve_documents
+from backend.tools.sql import execute_sql, list_tables
+from backend.graph.state import AgentState
 from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_core.output_parsers import StrOutputParser
 from langgraph.prebuilt import create_react_agent
-from agent_app.tools.sql import (
+from backend.tools.sql import (
     sql_db_list_tables, sql_db_schema, sql_db_query, 
     sql_db_query_checker, sql_db_column_value_checker, sql_db_is_readonly,
     sql_db_is_aggregate_only

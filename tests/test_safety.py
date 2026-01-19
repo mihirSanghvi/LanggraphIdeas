@@ -1,5 +1,5 @@
 import pytest
-from agent_app.utils.safety import is_readonly_sql
+from backend.tools.sql import is_readonly_sql
 
 def test_select_is_safe():
     assert is_readonly_sql("SELECT * FROM users")

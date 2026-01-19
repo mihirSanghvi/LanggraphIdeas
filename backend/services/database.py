@@ -1,5 +1,5 @@
 from langchain_community.utilities import SQLDatabase
-from agent_app.config import settings
+from backend.config import settings
 import logging
 
 logger = logging.getLogger(__name__)

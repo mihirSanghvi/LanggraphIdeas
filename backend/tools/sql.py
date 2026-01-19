@@ -2,8 +2,8 @@ from typing import List, Optional
 import re
 from langchain_core.tools import tool
 from langchain_core.pydantic_v1 import BaseModel, Field
-from agent_app.services.database import get_db
-from agent_app.services.llm import get_llm
+from backend.services.database import get_db
+from backend.services.llm import get_llm
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
